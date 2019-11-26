@@ -63,6 +63,17 @@ export default class LoginScreen extends Component {
     }
   }
 
+  openUrl = () => {
+  var url = "https://github.com/sahiljain13/Deal-Minor";
+  Linking.canOpenURL(url).then(supported => {
+    if (supported) {
+      Linking.openURL(url);
+    } else {
+      console.log("Don't know how to open URL: " + url);
+    }
+  });
+};
+
   onLoginPress() {
     var username = this.state.username;
     var password = this.state.password;
@@ -202,7 +213,7 @@ export default class LoginScreen extends Component {
               </View>
             </View>
           </KeyboardAvoidingView>
-          <TouchableOpacity style={{ flex: 0.1 }}>
+          <TouchableOpacity style={{ flex: 0.1 }} onPress={() =>{this.openUrl()}}>
             <Text style={styles.instructions}>
               Developers : Sahil , Soumya , Rashi{"\n"}
             </Text>

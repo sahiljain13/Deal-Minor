@@ -62,7 +62,7 @@ export default class SplashScreen extends Component {
 
   componentDidMount() {
     console.log("inside componentDidMount of splash screen");
-    AsyncStorage.clear()
+    //AsyncStorage.clear()
     this._checkLoginStatus();
   }
 

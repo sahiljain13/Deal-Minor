@@ -19,7 +19,7 @@
     "moment": "^2.24.0",
     "native-base": "^2.13.8",
     "react": "16.9.0",
-    "react-native": "0.61.3",
+    "react-native": "0.62.3",
     "react-native-android-location-enabler": "^1.2.0",
     "react-native-base64": "^0.0.2",
     "react-native-breadcrumb": "^1.0.1",
